@@ -1,0 +1,12 @@
+/*
+<div>
+    <p>guess my text color</p>
+    <p class="green">I have a class</p>
+    <p style="color: purple">I have inline style</p>
+</div>
+*/
+p {color: blue;}
+
+.green {color: green;}
+
+div {color: red !important;}
