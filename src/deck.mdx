@@ -1,0 +1,178 @@
+<!-- export { dark as theme } from 'mdx-deck/themes' -->
+import { CodeSurfer } from "mdx-deck-code-surfer"
+import { Notes } from 'mdx-deck'
+
+# Knowledge transfer
+---
+# CSS
+---
+## Why CSS exists?
+---
+<CodeSurfer
+  title="Why CSS exists"
+  code={require("!raw-loader!./snippets/ugly.html")}
+  lang="html"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {lines: [2], notes: "Presentational and content together"},
+    {lines: [4], notes: "Problems when changing presentation on many pages"},
+    {range: [0,999]}
+  ]}
+/>
+<Notes>
+Imagine that you have 20 views each with its html file 
+and you have to change the bg color of the site
+</Notes>
+---
+<CodeSurfer
+  title="Separating presentation and content"
+  code={require("!raw-loader!./snippets/styles-separated.html")}
+  lang="html"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {range: [8,12]}
+  ]}
+/>
+
+---
+<CodeSurfer
+  title="Reusable CSS files"
+  code={require("!raw-loader!./snippets/reusing-css.html")}
+  lang="html"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {lines: [8]}
+  ]}
+/>
+---
+## Rules
+---
+<CodeSurfer
+  title="Rules"
+  code={require("!raw-loader!./snippets/selectors.css")}
+  lang="css"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { tokens: { 1: [0] }, notes: "Selector" },
+    { tokens: { 1: [1], 3: [1] } },
+    { tokens: { 2: [1] }, notes: "Attribute" },
+    { tokens: { 2: [3] }, notes: "Value" },
+    { tokens: { 2: [4] } },
+    { range: [1,3] },
+    { range: [5,7] },
+    { range: [9,11] }
+  ]}
+/>
+---
+# Demo
+<a href="https://codepen.io/ederdiaz/pen/rZPrmB" target="_blank">https://codepen.io/ederdiaz/pen/rZPrmB</a>
+
+---
+<CodeSurfer
+  title="Special selectors"
+  code={require("!raw-loader!./snippets/special-selectors.css")}
+  lang="css"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { tokens: { 1: [0,1] }, notes: "Descendant" },
+    { tokens: { 5: [0, 1, 2] }, notes: "Child" },
+    { tokens: { 9: [0, 1, 2] }, notes: "Atribute" },
+    { tokens: { 13: [0, 1, 2] }, notes: "Pseudo class" },
+    { range: [0,16] }
+  ]}
+/>
+---
+# Demo
+---
+## CSS property values
+---
+# CSS property values
+## There are a lot of types of values
+## But you can NOT use them everywhere
+---
+<CodeSurfer
+  title="Property values"
+  code={require("!raw-loader!./snippets/property-values.css")}
+  lang="css"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { lines: [2, 10, 17]},
+    { lines: [3, 11, 18]},
+    { lines: [4, 12, 19]},
+    { lines: [5, 13, 20]},
+    { range: [0,22] },
+    { range: [23,36] }
+  ]}
+/>
+---
+# Demo
+---
+# Cascading and inheritance
+---
+
+<CodeSurfer
+  title="Cascading and inheritance"
+  code={require("!raw-loader!./snippets/cascading.css")}
+  lang="css"
+  showNumbers={true}
+  dark={false}
+  steps={[
+    { range: [0,12] },
+    { range: [15,29] }
+  ]}
+/>
+
+---
+
+# Specificity
+
+### Least
+`*`
+
+`element`
+
+`.class`
+
+`#id`
+
+`inline-styles`
+### Most
+
+---
+
+# Special case
+`!important` 
+
+beats everything 
+
+## Specificity explained with Batman
+https://codepen.io/mandymichael/full/pyggQd
+
+---
+
+<CodeSurfer
+  title="Inheritance"
+  code={require("!raw-loader!./snippets/inheritance.css")}
+  lang="css"
+  showNumbers={true}
+  dark={false}
+/>
+
+---
+
+# What's next?
+- Box model
+- Positioning
+- Making layouts
+- Responsive design
+- Practice, practice, practice
+
+---
+
+![thanks](../assets/t-hanks.gif)

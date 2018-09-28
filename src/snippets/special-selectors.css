@@ -1,0 +1,15 @@
+div p {
+    background-color: red;
+}
+
+div > p {
+    background-color: #FF0000;
+}
+
+input[name=email] {
+    background-color: rgba(255,0,0,1);
+} 
+
+a:hover {
+    color: gray;
+}

@@ -1,0 +1,11 @@
+div {
+    color: red;
+    border: solid 1px black;
+}
+
+/*
+<div>
+    <p>guess my text color</p>
+</div>
+<p>guess my text color too!</p>
+*/

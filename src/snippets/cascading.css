@@ -1,0 +1,29 @@
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+/*
+<p class="red blue">What color am I?</p>
+<p class="blue red">and me?</p>
+*/
+
+/*---------------*/
+
+body > div {
+    background-color: red;
+}
+
+div {
+    background-color: black
+}
+
+* {
+    background-color: green;
+}
+
+/*
+<div>guess my color</div>
+*/
